@@ -48,7 +48,6 @@ app = FastAPI(
 # -----------------------------
 class Transaction(BaseModel):
     Time: float
-    Amount: float
     V1: float
     V2: float
     V3: float
@@ -77,6 +76,7 @@ class Transaction(BaseModel):
     V26: float
     V27: float
     V28: float
+    Amount: float
 
 # -----------------------------
 # Health check
@@ -108,8 +108,8 @@ def predict(transaction: Transaction):
 
     # Scale Time and Amount
     try:
-        features[0, 0] = scaler_time.transform([[features[0, 0]]])[0, 0]   # Time
-        features[0, -1] = scaler_amount.transform([[features[0, -1]]])[0, 0]  # Amount
+        features[0, 0] = scaler_time.transform([[features[0, 0]]])[0, 0]   
+        features[0, -1] = scaler_amount.transform([[features[0, -1]]])[0, 0]  
     except Exception as e:
         print("Scaling failed:", e)
 
