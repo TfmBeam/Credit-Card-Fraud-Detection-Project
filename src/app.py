@@ -20,7 +20,7 @@ best_threshold = 0.5
 async def lifespan(app: FastAPI):
     global model, scaler_amount, scaler_time, best_threshold
     try:
-        model = load_model("models/neural_network_model.keras")
+        model = load_model("models/neural_network_model.h5",compile=False)
         scaler_amount = joblib.load("models/scaler_amount.joblib")
         scaler_time = joblib.load("models/scaler_time.joblib")
         best_threshold = joblib.load("models/best_threshold.joblib")

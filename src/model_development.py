@@ -64,7 +64,7 @@ if __name__ == '__main__':
         print("Error: Training data not found. Please run the preprocessing script first.")
     nn_Model = train_and_save_model()
     if nn_Model:
-        nn_Model.save('models/neural_network_model.keras')
+        nn_Model.save('models/neural_network_model.h5')
         print("\nNeural Network model trained and saved successfully.")
     y_probabilities_nn = nn_Model.predict(X_val)
 precision_nn, recall_nn, _ = precision_recall_curve(y_val, y_probabilities_nn)
