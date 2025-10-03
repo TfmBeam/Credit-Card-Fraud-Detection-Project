@@ -363,9 +363,8 @@ This project demonstrates proficiency in:
 ## 📞 Contact & Support
 
 **Developer**: Pranav Chandrabhatla  
-**Email**: [Your Email]  
-**LinkedIn**: [Your LinkedIn]  
-**GitHub**: [Your GitHub]
+**Email**: pranavq50@gmail.com 
+**LinkedIn**: linkedin.com/in/pranav-chandrabhatla-4b7673280/ 
 
 ---
 
